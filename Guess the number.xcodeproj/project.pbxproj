@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D27512929125FE400DBDA6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D27512829125FE400DBDA6D /* AppDelegate.swift */; };
-		1D27512B29125FE400DBDA6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D27512A29125FE400DBDA6D /* SceneDelegate.swift */; };
 		1D27512D29125FE400DBDA6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D27512C29125FE400DBDA6D /* ViewController.swift */; };
-		1D27513029125FE400DBDA6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D27512E29125FE400DBDA6D /* Main.storyboard */; };
 		1D27513229125FE500DBDA6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D27513129125FE500DBDA6D /* Assets.xcassets */; };
 		1D27513529125FE500DBDA6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D27513329125FE500DBDA6D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,9 +16,7 @@
 /* Begin PBXFileReference section */
 		1D27512529125FE400DBDA6D /* Guess the number.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess the number.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D27512829125FE400DBDA6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1D27512A29125FE400DBDA6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1D27512C29125FE400DBDA6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1D27512F29125FE400DBDA6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D27513129125FE500DBDA6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D27513429125FE500DBDA6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D27513629125FE500DBDA6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +52,69 @@
 		1D27512729125FE400DBDA6D /* Guess the number */ = {
 			isa = PBXGroup;
 			children = (
-				1D27512829125FE400DBDA6D /* AppDelegate.swift */,
-				1D27512A29125FE400DBDA6D /* SceneDelegate.swift */,
+				1D27513C2912619800DBDA6D /* Application */,
+				1D2751422912621600DBDA6D /* Start */,
+				1D2751412912620900DBDA6D /* GuessNumber */,
+				1D275140291261F900DBDA6D /* ComputerGuessing */,
+				1D27513F291261DE00DBDA6D /* PlayerNumberGuessing */,
+				1D27513E291261D000DBDA6D /* GameResult */,
+				1D27513D291261A100DBDA6D /* SupportingFiles */,
 				1D27512C29125FE400DBDA6D /* ViewController.swift */,
-				1D27512E29125FE400DBDA6D /* Main.storyboard */,
+			);
+			path = "Guess the number";
+			sourceTree = "<group>";
+		};
+		1D27513C2912619800DBDA6D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1D27512829125FE400DBDA6D /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1D27513D291261A100DBDA6D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				1D27513129125FE500DBDA6D /* Assets.xcassets */,
 				1D27513329125FE500DBDA6D /* LaunchScreen.storyboard */,
 				1D27513629125FE500DBDA6D /* Info.plist */,
 			);
-			path = "Guess the number";
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		1D27513E291261D000DBDA6D /* GameResult */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GameResult;
+			sourceTree = "<group>";
+		};
+		1D27513F291261DE00DBDA6D /* PlayerNumberGuessing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PlayerNumberGuessing;
+			sourceTree = "<group>";
+		};
+		1D275140291261F900DBDA6D /* ComputerGuessing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ComputerGuessing;
+			sourceTree = "<group>";
+		};
+		1D2751412912620900DBDA6D /* GuessNumber */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GuessNumber;
+			sourceTree = "<group>";
+		};
+		1D2751422912621600DBDA6D /* Start */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Start;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +177,6 @@
 			files = (
 				1D27513529125FE500DBDA6D /* LaunchScreen.storyboard in Resources */,
 				1D27513229125FE500DBDA6D /* Assets.xcassets in Resources */,
-				1D27513029125FE400DBDA6D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,21 +189,12 @@
 			files = (
 				1D27512D29125FE400DBDA6D /* ViewController.swift in Sources */,
 				1D27512929125FE400DBDA6D /* AppDelegate.swift in Sources */,
-				1D27512B29125FE400DBDA6D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1D27512E29125FE400DBDA6D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1D27512F29125FE400DBDA6D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1D27513329125FE500DBDA6D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,10 +329,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V8V72KCX9X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Guess the number/Info.plist";
+				INFOPLIST_FILE = "Guess the number/SupportingFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,9 +341,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "RAMENSKII.Guess-the-number";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,10 +359,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V8V72KCX9X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Guess the number/Info.plist";
+				INFOPLIST_FILE = "Guess the number/SupportingFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,9 +371,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "RAMENSKII.Guess-the-number";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
