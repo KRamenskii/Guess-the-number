@@ -11,6 +11,26 @@
 		1D27512D29125FE400DBDA6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D27512C29125FE400DBDA6D /* ViewController.swift */; };
 		1D27513229125FE500DBDA6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D27513129125FE500DBDA6D /* Assets.xcassets */; };
 		1D27513529125FE500DBDA6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D27513329125FE500DBDA6D /* LaunchScreen.storyboard */; };
+		1DC7B6B5291D32DA0057868B /* StartAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7B6B4291D32DA0057868B /* StartAssembly.swift */; };
+		1DC7B6B7291D33060057868B /* StartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7B6B6291D33060057868B /* StartPresenter.swift */; };
+		1DC7B6B9291D33230057868B /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7B6B8291D33230057868B /* StartViewController.swift */; };
+		1DC7B6BB291D33330057868B /* StartViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7B6BA291D33330057868B /* StartViewInput.swift */; };
+		1DC7B6BD291D33400057868B /* StartViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7B6BC291D33400057868B /* StartViewOutput.swift */; };
+		1DC7B6BF291D33490057868B /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DC7B6BE291D33490057868B /* Start.storyboard */; };
+		1DC7B6C2291D36410057868B /* UIButton + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7B6C1291D36410057868B /* UIButton + Ext.swift */; };
+		1DC7B6C7291D38810057868B /* GuessNumberAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7B6C6291D38810057868B /* GuessNumberAssembly.swift */; };
+		1DC7B6C9291D388C0057868B /* GuessNumberPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7B6C8291D388C0057868B /* GuessNumberPresenter.swift */; };
+		1DC7B6CB291D389D0057868B /* GuessNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7B6CA291D389D0057868B /* GuessNumberViewController.swift */; };
+		1DC7B6CD291D38A90057868B /* GuessNumberViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7B6CC291D38A90057868B /* GuessNumberViewInput.swift */; };
+		1DC7B6CF291D38B70057868B /* GuessNumberViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7B6CE291D38B70057868B /* GuessNumberViewOutput.swift */; };
+		1DC7B6D1291D38BF0057868B /* GuessNumber.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DC7B6D0291D38BF0057868B /* GuessNumber.storyboard */; };
+		1DC7B6D6291D54580057868B /* ComputerGuessing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DC7B6D5291D54580057868B /* ComputerGuessing.storyboard */; };
+		1DC7B6D8291D546B0057868B /* ComputerGuessingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7B6D7291D546B0057868B /* ComputerGuessingAssembly.swift */; };
+		1DC7B6DA291D54740057868B /* ComputerGuessingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7B6D9291D54740057868B /* ComputerGuessingPresenter.swift */; };
+		1DC7B6DC291D547E0057868B /* ComputerGuessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7B6DB291D547E0057868B /* ComputerGuessingViewController.swift */; };
+		1DC7B6DE291D54880057868B /* ComputerGuessingViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7B6DD291D54880057868B /* ComputerGuessingViewInput.swift */; };
+		1DC7B6E0291D54940057868B /* ComputerGuessingViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7B6DF291D54940057868B /* ComputerGuessingViewOutput.swift */; };
+		1DC7B6E4291D6BB70057868B /* String + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7B6E3291D6BB70057868B /* String + Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +40,26 @@
 		1D27513129125FE500DBDA6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D27513429125FE500DBDA6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D27513629125FE500DBDA6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DC7B6B4291D32DA0057868B /* StartAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartAssembly.swift; sourceTree = "<group>"; };
+		1DC7B6B6291D33060057868B /* StartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPresenter.swift; sourceTree = "<group>"; };
+		1DC7B6B8291D33230057868B /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		1DC7B6BA291D33330057868B /* StartViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewInput.swift; sourceTree = "<group>"; };
+		1DC7B6BC291D33400057868B /* StartViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewOutput.swift; sourceTree = "<group>"; };
+		1DC7B6BE291D33490057868B /* Start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
+		1DC7B6C1291D36410057868B /* UIButton + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Ext.swift"; sourceTree = "<group>"; };
+		1DC7B6C6291D38810057868B /* GuessNumberAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessNumberAssembly.swift; sourceTree = "<group>"; };
+		1DC7B6C8291D388C0057868B /* GuessNumberPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessNumberPresenter.swift; sourceTree = "<group>"; };
+		1DC7B6CA291D389D0057868B /* GuessNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessNumberViewController.swift; sourceTree = "<group>"; };
+		1DC7B6CC291D38A90057868B /* GuessNumberViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessNumberViewInput.swift; sourceTree = "<group>"; };
+		1DC7B6CE291D38B70057868B /* GuessNumberViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessNumberViewOutput.swift; sourceTree = "<group>"; };
+		1DC7B6D0291D38BF0057868B /* GuessNumber.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GuessNumber.storyboard; sourceTree = "<group>"; };
+		1DC7B6D5291D54580057868B /* ComputerGuessing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ComputerGuessing.storyboard; sourceTree = "<group>"; };
+		1DC7B6D7291D546B0057868B /* ComputerGuessingAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerGuessingAssembly.swift; sourceTree = "<group>"; };
+		1DC7B6D9291D54740057868B /* ComputerGuessingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerGuessingPresenter.swift; sourceTree = "<group>"; };
+		1DC7B6DB291D547E0057868B /* ComputerGuessingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerGuessingViewController.swift; sourceTree = "<group>"; };
+		1DC7B6DD291D54880057868B /* ComputerGuessingViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerGuessingViewInput.swift; sourceTree = "<group>"; };
+		1DC7B6DF291D54940057868B /* ComputerGuessingViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerGuessingViewOutput.swift; sourceTree = "<group>"; };
+		1DC7B6E3291D6BB70057868B /* String + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +98,7 @@
 				1D275140291261F900DBDA6D /* ComputerGuessing */,
 				1D27513F291261DE00DBDA6D /* PlayerNumberGuessing */,
 				1D27513E291261D000DBDA6D /* GameResult */,
+				1DC7B6C0291D36250057868B /* Extensions */,
 				1D27513D291261A100DBDA6D /* SupportingFiles */,
 				1D27512C29125FE400DBDA6D /* ViewController.swift */,
 			);
@@ -99,6 +140,10 @@
 		1D275140291261F900DBDA6D /* ComputerGuessing */ = {
 			isa = PBXGroup;
 			children = (
+				1DC7B6D4291D543C0057868B /* Assembly */,
+				1DC7B6D3291D54350057868B /* Presenter */,
+				1DC7B6D2291D542B0057868B /* View */,
+				1DC7B6D5291D54580057868B /* ComputerGuessing.storyboard */,
 			);
 			path = ComputerGuessing;
 			sourceTree = "<group>";
@@ -106,6 +151,10 @@
 		1D2751412912620900DBDA6D /* GuessNumber */ = {
 			isa = PBXGroup;
 			children = (
+				1DC7B6C5291D38650057868B /* Assembly */,
+				1DC7B6C4291D385C0057868B /* Presenter */,
+				1DC7B6C3291D38540057868B /* View */,
+				1DC7B6D0291D38BF0057868B /* GuessNumber.storyboard */,
 			);
 			path = GuessNumber;
 			sourceTree = "<group>";
@@ -113,8 +162,99 @@
 		1D2751422912621600DBDA6D /* Start */ = {
 			isa = PBXGroup;
 			children = (
+				1DC7B6B3291D32840057868B /* Assembly */,
+				1DC7B6B2291D32760057868B /* Presenter */,
+				1DC7B6B1291D326A0057868B /* View */,
+				1DC7B6BE291D33490057868B /* Start.storyboard */,
 			);
 			path = Start;
+			sourceTree = "<group>";
+		};
+		1DC7B6B1291D326A0057868B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1DC7B6B8291D33230057868B /* StartViewController.swift */,
+				1DC7B6BA291D33330057868B /* StartViewInput.swift */,
+				1DC7B6BC291D33400057868B /* StartViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1DC7B6B2291D32760057868B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1DC7B6B6291D33060057868B /* StartPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1DC7B6B3291D32840057868B /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				1DC7B6B4291D32DA0057868B /* StartAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		1DC7B6C0291D36250057868B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1DC7B6C1291D36410057868B /* UIButton + Ext.swift */,
+				1DC7B6E3291D6BB70057868B /* String + Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1DC7B6C3291D38540057868B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1DC7B6CA291D389D0057868B /* GuessNumberViewController.swift */,
+				1DC7B6CC291D38A90057868B /* GuessNumberViewInput.swift */,
+				1DC7B6CE291D38B70057868B /* GuessNumberViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1DC7B6C4291D385C0057868B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1DC7B6C8291D388C0057868B /* GuessNumberPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1DC7B6C5291D38650057868B /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				1DC7B6C6291D38810057868B /* GuessNumberAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		1DC7B6D2291D542B0057868B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1DC7B6DB291D547E0057868B /* ComputerGuessingViewController.swift */,
+				1DC7B6DD291D54880057868B /* ComputerGuessingViewInput.swift */,
+				1DC7B6DF291D54940057868B /* ComputerGuessingViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1DC7B6D3291D54350057868B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1DC7B6D9291D54740057868B /* ComputerGuessingPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1DC7B6D4291D543C0057868B /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				1DC7B6D7291D546B0057868B /* ComputerGuessingAssembly.swift */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +316,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D27513529125FE500DBDA6D /* LaunchScreen.storyboard in Resources */,
+				1DC7B6D1291D38BF0057868B /* GuessNumber.storyboard in Resources */,
 				1D27513229125FE500DBDA6D /* Assets.xcassets in Resources */,
+				1DC7B6D6291D54580057868B /* ComputerGuessing.storyboard in Resources */,
+				1DC7B6BF291D33490057868B /* Start.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,8 +330,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DC7B6BB291D33330057868B /* StartViewInput.swift in Sources */,
+				1DC7B6B9291D33230057868B /* StartViewController.swift in Sources */,
+				1DC7B6E0291D54940057868B /* ComputerGuessingViewOutput.swift in Sources */,
+				1DC7B6DC291D547E0057868B /* ComputerGuessingViewController.swift in Sources */,
 				1D27512D29125FE400DBDA6D /* ViewController.swift in Sources */,
+				1DC7B6CB291D389D0057868B /* GuessNumberViewController.swift in Sources */,
+				1DC7B6CD291D38A90057868B /* GuessNumberViewInput.swift in Sources */,
+				1DC7B6E4291D6BB70057868B /* String + Ext.swift in Sources */,
+				1DC7B6B7291D33060057868B /* StartPresenter.swift in Sources */,
+				1DC7B6DA291D54740057868B /* ComputerGuessingPresenter.swift in Sources */,
+				1DC7B6BD291D33400057868B /* StartViewOutput.swift in Sources */,
+				1DC7B6DE291D54880057868B /* ComputerGuessingViewInput.swift in Sources */,
+				1DC7B6C9291D388C0057868B /* GuessNumberPresenter.swift in Sources */,
+				1DC7B6C7291D38810057868B /* GuessNumberAssembly.swift in Sources */,
+				1DC7B6C2291D36410057868B /* UIButton + Ext.swift in Sources */,
 				1D27512929125FE400DBDA6D /* AppDelegate.swift in Sources */,
+				1DC7B6CF291D38B70057868B /* GuessNumberViewOutput.swift in Sources */,
+				1DC7B6B5291D32DA0057868B /* StartAssembly.swift in Sources */,
+				1DC7B6D8291D546B0057868B /* ComputerGuessingAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
