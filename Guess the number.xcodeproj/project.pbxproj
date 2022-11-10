@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1D27512929125FE400DBDA6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D27512829125FE400DBDA6D /* AppDelegate.swift */; };
-		1D27512D29125FE400DBDA6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D27512C29125FE400DBDA6D /* ViewController.swift */; };
 		1D27513229125FE500DBDA6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D27513129125FE500DBDA6D /* Assets.xcassets */; };
 		1D27513529125FE500DBDA6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D27513329125FE500DBDA6D /* LaunchScreen.storyboard */; };
 		1DC7B6B5291D32DA0057868B /* StartAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7B6B4291D32DA0057868B /* StartAssembly.swift */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		1D27512529125FE400DBDA6D /* Guess the number.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess the number.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D27512829125FE400DBDA6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1D27512C29125FE400DBDA6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1D27513129125FE500DBDA6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D27513429125FE500DBDA6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D27513629125FE500DBDA6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 				1D27513E291261D000DBDA6D /* GameResult */,
 				1DC7B6C0291D36250057868B /* Extensions */,
 				1D27513D291261A100DBDA6D /* SupportingFiles */,
-				1D27512C29125FE400DBDA6D /* ViewController.swift */,
 			);
 			path = "Guess the number";
 			sourceTree = "<group>";
@@ -334,7 +331,6 @@
 				1DC7B6B9291D33230057868B /* StartViewController.swift in Sources */,
 				1DC7B6E0291D54940057868B /* ComputerGuessingViewOutput.swift in Sources */,
 				1DC7B6DC291D547E0057868B /* ComputerGuessingViewController.swift in Sources */,
-				1D27512D29125FE400DBDA6D /* ViewController.swift in Sources */,
 				1DC7B6CB291D389D0057868B /* GuessNumberViewController.swift in Sources */,
 				1DC7B6CD291D38A90057868B /* GuessNumberViewInput.swift in Sources */,
 				1DC7B6E4291D6BB70057868B /* String + Ext.swift in Sources */,

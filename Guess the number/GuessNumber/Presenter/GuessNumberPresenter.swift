@@ -15,10 +15,23 @@ final class GuessNumberPresenter {
     
     // MARK: - Private methods
     
-    private func buttonState(text: String) -> Bool {
+    private func buttonState(_ text: String) -> Bool {
         return text.isNumber()
     }
     
+    private func isInTheRange(_ text: String) -> Bool {
+        guard text.isNumber() else { return false }
+        var isInTheRange = Bool()
+        if let number = Int(text) {
+            switch number {
+            case 1...100:
+                isInTheRange = true
+            default:
+                isInTheRange = false
+            }
+        }
+        return isInTheRange
+    }
 }
 
 // MARK: - GuessNumberViewOutput
@@ -26,7 +39,7 @@ final class GuessNumberPresenter {
 extension GuessNumberPresenter: GuessNumberViewOutput {
     
     func checkEnteredText(text: String) {
-        view?.update(buttonState: buttonState(text: text))
+        let number = text.isNumber() ? Int(text) : nil
+        view?.update(buttonState: buttonState(text), number: number, isInTheRange: isInTheRange(text))
     }
 }
-

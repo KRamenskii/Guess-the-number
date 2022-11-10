@@ -8,5 +8,5 @@
 import Foundation
 
 protocol GuessNumberViewInput: AnyObject {
-    func update(buttonState: Bool)
+    func update(buttonState: Bool, number: Int?, isInTheRange: Bool)
 }
