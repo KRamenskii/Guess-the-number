@@ -38,8 +38,10 @@ final class GuessNumberViewController: UIViewController {
         if sender.alpha == 1 {
             
             if isInTheRange {
-                let viewController = ComputerGuessingAssembly.assemblyModule()
-                present(viewController, animated: true)
+                if let hiddenNumber = number {
+                    let viewController = ComputerGuessingAssembly.assemblyModule(hiddenNumber: hiddenNumber)
+                    present(viewController, animated: true)
+                }
             } else {
                 let message = "Введённое число должно находиться в диапазоне от 1 до 100 включительно."
                 showAlert(message: message)

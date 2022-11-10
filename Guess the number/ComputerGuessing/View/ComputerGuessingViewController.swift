@@ -18,11 +18,14 @@ final class ComputerGuessingViewController: UIViewController {
     @IBOutlet private weak var lessButton: UIButton!
     @IBOutlet private weak var titleLabel: UILabel!
     
+    private var generatedNumber = Int() { didSet { setTitle() }}
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        presenter?.viewWasAppear()
     }
     
     // MARK: - Settings
@@ -32,10 +35,32 @@ final class ComputerGuessingViewController: UIViewController {
         equalsButton.addBorder()
         lessButton.addBorder()
     }
+    
+    private func setTitle() {
+        titleLabel.text = "Your number is - \(generatedNumber) ?"
+    }
+    
+    // MARK: - Actions
+    
+    @IBAction func tappedEqualsButton(_ sender: UIButton) {
+        let viewController = PlayerNumberGuessingAssembly.assemblyModule()
+        present(viewController, animated: true)
+    }
+    
+    @IBAction func tappedMoreButton(_ sender: UIButton) {
+        presenter?.changeRange(generatedNumber, nil)
+    }
+    
+    @IBAction func tappedLessButton(_ sender: UIButton) {
+        presenter?.changeRange(nil, generatedNumber)
+    }
 }
 
 // MARK: - ComputerGuessingViewInput
 
 extension ComputerGuessingViewController: ComputerGuessingViewInput {
     
+    func update(generatedNumber: Int) {
+        self.generatedNumber = generatedNumber
+    }
 }

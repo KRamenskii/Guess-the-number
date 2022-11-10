@@ -9,12 +9,12 @@ import UIKit
 
 final class ComputerGuessingAssembly {
     
-    static func assemblyModule() -> UIViewController {
+    static func assemblyModule(hiddenNumber: Int) -> UIViewController {
         guard let view = UIStoryboard(name: "ComputerGuessing", bundle: nil).instantiateViewController(withIdentifier: "ComputerGuessingViewController") as? ComputerGuessingViewController else {
             return UIViewController()
         }
         
-        let presenter = ComputerGuessingPresenter()
+        let presenter = ComputerGuessingPresenter(hiddenNumber: hiddenNumber)
         view.presenter = presenter
         presenter.view = view
         

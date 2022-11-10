@@ -27,6 +27,9 @@
                                         <state key="normal" title="&gt;">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tappedMoreButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xGo-6V-xqr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvv-w4-NBW">
                                         <rect key="frame" x="81.999999999999972" y="0.0" width="71.666666666666657" height="70.666666666666671"/>
@@ -36,6 +39,9 @@
                                         <state key="normal" title="=">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tappedEqualsButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="hWf-3s-9wD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l85-Wv-MYd">
                                         <rect key="frame" x="163.66666666666669" y="0.0" width="72" height="70.666666666666671"/>
@@ -45,6 +51,9 @@
                                         <state key="normal" title="&lt;">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tappedLessButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wpZ-0l-DIU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
