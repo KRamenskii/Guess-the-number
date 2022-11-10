@@ -14,6 +14,8 @@ extension UIButton {
     }
     
     func addBorder() {
-        
+        layer.borderWidth = 1
+        layer.borderColor = UIColor.black.cgColor
+        layer.cornerRadius = bounds.height / 4
     }
 }

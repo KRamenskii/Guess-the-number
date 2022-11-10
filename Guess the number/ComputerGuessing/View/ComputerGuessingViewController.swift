@@ -13,10 +13,24 @@ final class ComputerGuessingViewController: UIViewController {
     
     var presenter: ComputerGuessingPresenter?
     
+    @IBOutlet private weak var moreButton: UIButton!
+    @IBOutlet private weak var equalsButton: UIButton!
+    @IBOutlet private weak var lessButton: UIButton!
+    @IBOutlet private weak var titleLabel: UILabel!
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
+    }
+    
+    // MARK: - Settings
+    
+    private func setupView() {
+        moreButton.addBorder()
+        equalsButton.addBorder()
+        lessButton.addBorder()
     }
 }
 

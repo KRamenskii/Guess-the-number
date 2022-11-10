@@ -13,7 +13,7 @@ final class StartViewController: UIViewController {
     
     var presenter: StartPresenter?
     
-    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet private weak var startButton: UIButton!
     
     // MARK: - Lifecycle
     

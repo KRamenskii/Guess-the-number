@@ -13,8 +13,8 @@ final class GuessNumberViewController: UIViewController {
     
     var presenter: GuessNumberPresenter?
     
-    @IBOutlet weak var enterNumberButton: UIButton!
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet private weak var enterNumberButton: UIButton!
+    @IBOutlet private weak var textField: UITextField!
     
     private var number: Int?
     private var isInTheRange = Bool()

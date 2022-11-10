@@ -19,12 +19,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KYg-ze-46o">
                                 <rect key="frame" x="78.666666666666671" y="677.33333333333337" width="235.66666666666663" height="70.666666666666629"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbW-4X-haP">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbW-4X-haP">
                                         <rect key="frame" x="0.0" y="0.0" width="72" height="70.666666666666671"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="&gt;">
-                                            <color key="titleColor" systemColor="labelColor"/>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvv-w4-NBW">
@@ -33,7 +34,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="=">
-                                            <color key="titleColor" systemColor="labelColor"/>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l85-Wv-MYd">
@@ -42,7 +43,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="&lt;">
-                                            <color key="titleColor" systemColor="labelColor"/>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                 </subviews>
@@ -52,7 +53,25 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My number is ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGs-Tv-WBW">
-                                <rect key="frame" x="78.666666666666671" y="635.66666666666663" width="235.66666666666663" height="21.666666666666629"/>
+                                <rect key="frame" x="78.666666666666671" y="640.66666666666663" width="235.66666666666663" height="21.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try № 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fad-MH-AVU">
+                                <rect key="frame" x="162.33333333333334" y="109" width="68.333333333333343" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computer is guessing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjS-Oi-KeD">
+                                <rect key="frame" x="109" y="153" width="175" height="21.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your number is - 80 ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfR-eg-cPP">
+                                <rect key="frame" x="110.33333333333333" y="234.66666666666666" width="172.66666666666669" height="21.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -63,12 +82,24 @@
                         <constraints>
                             <constraint firstItem="KYg-ze-46o" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="26v-bi-HJy"/>
                             <constraint firstItem="GGs-Tv-WBW" firstAttribute="trailing" secondItem="KYg-ze-46o" secondAttribute="trailing" id="9jk-Ky-Gfb"/>
+                            <constraint firstItem="fad-MH-AVU" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="CPj-Dp-FAb"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="KYg-ze-46o" secondAttribute="bottom" constant="70" id="GfF-gl-FPF"/>
-                            <constraint firstItem="KYg-ze-46o" firstAttribute="top" secondItem="GGs-Tv-WBW" secondAttribute="bottom" constant="20" id="VqA-wF-0ql"/>
+                            <constraint firstItem="fad-MH-AVU" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="KLP-TE-Z7n"/>
+                            <constraint firstItem="JfR-eg-cPP" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="MiN-h2-52x"/>
+                            <constraint firstItem="zjS-Oi-KeD" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="SYc-d7-bmG"/>
+                            <constraint firstItem="KYg-ze-46o" firstAttribute="top" secondItem="GGs-Tv-WBW" secondAttribute="bottom" constant="15" id="VqA-wF-0ql"/>
                             <constraint firstItem="KYg-ze-46o" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.6" id="fUI-c3-SFh"/>
+                            <constraint firstItem="JfR-eg-cPP" firstAttribute="top" secondItem="zjS-Oi-KeD" secondAttribute="bottom" constant="60" id="fuz-P8-v5L"/>
+                            <constraint firstItem="zjS-Oi-KeD" firstAttribute="top" secondItem="fad-MH-AVU" secondAttribute="bottom" constant="20" id="hg9-Vv-ry9"/>
                             <constraint firstItem="GGs-Tv-WBW" firstAttribute="leading" secondItem="KYg-ze-46o" secondAttribute="leading" id="wP0-a9-07U"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="equalsButton" destination="pvv-w4-NBW" id="491-VN-dz6"/>
+                        <outlet property="lessButton" destination="l85-Wv-MYd" id="cUF-sU-N0e"/>
+                        <outlet property="moreButton" destination="AbW-4X-haP" id="v4T-oM-TOl"/>
+                        <outlet property="titleLabel" destination="JfR-eg-cPP" id="k5T-52-MFP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,9 +107,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
