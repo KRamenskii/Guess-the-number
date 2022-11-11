@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KYg-ze-46o">
-                                <rect key="frame" x="78.666666666666671" y="677.33333333333337" width="235.66666666666663" height="70.666666666666629"/>
+                                <rect key="frame" x="78.666666666666686" y="677.33333333333337" width="235.66666666666663" height="70.666666666666629"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbW-4X-haP">
                                         <rect key="frame" x="0.0" y="0.0" width="72" height="70.666666666666671"/>
@@ -62,7 +62,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My number is ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGs-Tv-WBW">
-                                <rect key="frame" x="78.666666666666671" y="640.66666666666663" width="235.66666666666663" height="21.666666666666629"/>
+                                <rect key="frame" x="78.666666666666686" y="640.66666666666663" width="235.66666666666663" height="21.666666666666629"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -80,7 +80,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your number is - 80 ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfR-eg-cPP">
-                                <rect key="frame" x="110.33333333333333" y="234.66666666666666" width="172.66666666666669" height="21.666666666666657"/>
+                                <rect key="frame" x="110.33333333333331" y="234.66666666666666" width="172.66666666666669" height="21.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -90,8 +90,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="KYg-ze-46o" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="26v-bi-HJy"/>
+                            <constraint firstItem="KYg-ze-46o" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.6" id="8LE-Ez-pXA"/>
                             <constraint firstItem="GGs-Tv-WBW" firstAttribute="trailing" secondItem="KYg-ze-46o" secondAttribute="trailing" id="9jk-Ky-Gfb"/>
                             <constraint firstItem="fad-MH-AVU" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="CPj-Dp-FAb"/>
+                            <constraint firstItem="fad-MH-AVU" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="DTz-5A-xDG"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="KYg-ze-46o" secondAttribute="bottom" constant="70" id="GfF-gl-FPF"/>
                             <constraint firstItem="fad-MH-AVU" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="KLP-TE-Z7n"/>
                             <constraint firstItem="JfR-eg-cPP" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="MiN-h2-52x"/>
@@ -100,8 +102,38 @@
                             <constraint firstItem="KYg-ze-46o" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.6" id="fUI-c3-SFh"/>
                             <constraint firstItem="JfR-eg-cPP" firstAttribute="top" secondItem="zjS-Oi-KeD" secondAttribute="bottom" constant="60" id="fuz-P8-v5L"/>
                             <constraint firstItem="zjS-Oi-KeD" firstAttribute="top" secondItem="fad-MH-AVU" secondAttribute="bottom" constant="20" id="hg9-Vv-ry9"/>
+                            <constraint firstAttribute="bottom" secondItem="KYg-ze-46o" secondAttribute="bottom" constant="50" id="lWL-fA-Ldw"/>
                             <constraint firstItem="GGs-Tv-WBW" firstAttribute="leading" secondItem="KYg-ze-46o" secondAttribute="leading" id="wP0-a9-07U"/>
+                            <constraint firstItem="JfR-eg-cPP" firstAttribute="top" secondItem="zjS-Oi-KeD" secondAttribute="bottom" constant="30" id="wsR-E7-gRV"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GfF-gl-FPF"/>
+                                <exclude reference="fuz-P8-v5L"/>
+                                <exclude reference="wsR-E7-gRV"/>
+                                <exclude reference="CPj-Dp-FAb"/>
+                                <exclude reference="DTz-5A-xDG"/>
+                                <exclude reference="8LE-Ez-pXA"/>
+                                <exclude reference="fUI-c3-SFh"/>
+                                <exclude reference="lWL-fA-Ldw"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="wsR-E7-gRV"/>
+                                <include reference="DTz-5A-xDG"/>
+                                <include reference="8LE-Ez-pXA"/>
+                                <include reference="lWL-fA-Ldw"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="GfF-gl-FPF"/>
+                                <include reference="fuz-P8-v5L"/>
+                                <include reference="CPj-Dp-FAb"/>
+                                <include reference="fUI-c3-SFh"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="equalsButton" destination="pvv-w4-NBW" id="491-VN-dz6"/>

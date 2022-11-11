@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -39,15 +40,43 @@
                                 </connections>
                             </textField>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="G5O-Fu-0k4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottomMargin" secondItem="kdY-TX-6UM" secondAttribute="bottom" constant="70" id="8gN-P2-k7C"/>
                             <constraint firstItem="SvA-Hk-ssJ" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.85" id="Aww-Xk-CNZ"/>
+                            <constraint firstItem="SvA-Hk-ssJ" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.85" id="RFu-5M-inz"/>
+                            <constraint firstItem="SvA-Hk-ssJ" firstAttribute="top" secondItem="G5O-Fu-0k4" secondAttribute="top" constant="70" id="W84-yf-Xl7"/>
                             <constraint firstItem="SvA-Hk-ssJ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="iEf-oC-DeW"/>
                             <constraint firstItem="SvA-Hk-ssJ" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="topMargin" constant="100" id="jpG-uf-0xd"/>
+                            <constraint firstItem="kdY-TX-6UM" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.85" id="oFd-lZ-kNx"/>
                             <constraint firstItem="kdY-TX-6UM" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="s5J-Xc-L2F"/>
                             <constraint firstItem="kdY-TX-6UM" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.85" id="vRu-8W-nnD"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Aww-Xk-CNZ"/>
+                                <exclude reference="RFu-5M-inz"/>
+                                <exclude reference="W84-yf-Xl7"/>
+                                <exclude reference="jpG-uf-0xd"/>
+                                <exclude reference="oFd-lZ-kNx"/>
+                                <exclude reference="vRu-8W-nnD"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="RFu-5M-inz"/>
+                                <include reference="W84-yf-Xl7"/>
+                                <include reference="oFd-lZ-kNx"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Aww-Xk-CNZ"/>
+                                <include reference="jpG-uf-0xd"/>
+                                <include reference="vRu-8W-nnD"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="enterNumberButton" destination="kdY-TX-6UM" id="GDX-3q-6Bz"/>
