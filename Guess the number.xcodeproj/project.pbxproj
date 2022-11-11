@@ -10,6 +10,12 @@
 		1D27512929125FE400DBDA6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D27512829125FE400DBDA6D /* AppDelegate.swift */; };
 		1D27513229125FE500DBDA6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D27513129125FE500DBDA6D /* Assets.xcassets */; };
 		1D27513529125FE500DBDA6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D27513329125FE500DBDA6D /* LaunchScreen.storyboard */; };
+		1D974567291E3E8B00B1CA55 /* GameResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D974566291E3E8B00B1CA55 /* GameResult.storyboard */; };
+		1D97456C291E3EC300B1CA55 /* GameResultAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D97456B291E3EC300B1CA55 /* GameResultAssembly.swift */; };
+		1D97456E291E3ECD00B1CA55 /* GameResultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D97456D291E3ECD00B1CA55 /* GameResultPresenter.swift */; };
+		1D974570291E3ED600B1CA55 /* GameResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D97456F291E3ED600B1CA55 /* GameResultViewController.swift */; };
+		1D974572291E3EE900B1CA55 /* GameResultViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D974571291E3EE900B1CA55 /* GameResultViewInput.swift */; };
+		1D974574291E3EF400B1CA55 /* GameResultViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D974573291E3EF400B1CA55 /* GameResultViewOutput.swift */; };
 		1DADC8D9291DEC4000FE8649 /* UIViewController + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DADC8D8291DEC4000FE8649 /* UIViewController + Ext.swift */; };
 		1DADC8DB291DF74400FE8649 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DADC8DA291DF74400FE8649 /* Resources.swift */; };
 		1DC7B6B5291D32DA0057868B /* StartAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7B6B4291D32DA0057868B /* StartAssembly.swift */; };
@@ -46,6 +52,12 @@
 		1D27513129125FE500DBDA6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D27513429125FE500DBDA6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D27513629125FE500DBDA6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D974566291E3E8B00B1CA55 /* GameResult.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameResult.storyboard; sourceTree = "<group>"; };
+		1D97456B291E3EC300B1CA55 /* GameResultAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultAssembly.swift; sourceTree = "<group>"; };
+		1D97456D291E3ECD00B1CA55 /* GameResultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultPresenter.swift; sourceTree = "<group>"; };
+		1D97456F291E3ED600B1CA55 /* GameResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultViewController.swift; sourceTree = "<group>"; };
+		1D974571291E3EE900B1CA55 /* GameResultViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultViewInput.swift; sourceTree = "<group>"; };
+		1D974573291E3EF400B1CA55 /* GameResultViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultViewOutput.swift; sourceTree = "<group>"; };
 		1DADC8D8291DEC4000FE8649 /* UIViewController + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Ext.swift"; sourceTree = "<group>"; };
 		1DADC8DA291DF74400FE8649 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		1DC7B6B4291D32DA0057868B /* StartAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartAssembly.swift; sourceTree = "<group>"; };
@@ -140,6 +152,10 @@
 		1D27513E291261D000DBDA6D /* GameResult */ = {
 			isa = PBXGroup;
 			children = (
+				1D97456A291E3E9A00B1CA55 /* Assembly */,
+				1D974569291E3E9500B1CA55 /* Presenter */,
+				1D974568291E3E9000B1CA55 /* View */,
+				1D974566291E3E8B00B1CA55 /* GameResult.storyboard */,
 			);
 			path = GameResult;
 			sourceTree = "<group>";
@@ -186,6 +202,32 @@
 				1DC7B6BE291D33490057868B /* Start.storyboard */,
 			);
 			path = Start;
+			sourceTree = "<group>";
+		};
+		1D974568291E3E9000B1CA55 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D97456F291E3ED600B1CA55 /* GameResultViewController.swift */,
+				1D974571291E3EE900B1CA55 /* GameResultViewInput.swift */,
+				1D974573291E3EF400B1CA55 /* GameResultViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1D974569291E3E9500B1CA55 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1D97456D291E3ECD00B1CA55 /* GameResultPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1D97456A291E3E9A00B1CA55 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				1D97456B291E3EC300B1CA55 /* GameResultAssembly.swift */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		1DC7B6B1291D326A0057868B /* View */ = {
@@ -364,6 +406,7 @@
 				1DC7B6D1291D38BF0057868B /* GuessNumber.storyboard in Resources */,
 				1D27513229125FE500DBDA6D /* Assets.xcassets in Resources */,
 				1DC7B6E6291D83020057868B /* PlayerNumberGuessing.storyboard in Resources */,
+				1D974567291E3E8B00B1CA55 /* GameResult.storyboard in Resources */,
 				1DC7B6D6291D54580057868B /* ComputerGuessing.storyboard in Resources */,
 				1DC7B6BF291D33490057868B /* Start.storyboard in Resources */,
 			);
@@ -379,7 +422,9 @@
 				1DC7B6BB291D33330057868B /* StartViewInput.swift in Sources */,
 				1DC7B6B9291D33230057868B /* StartViewController.swift in Sources */,
 				1DC7B6E0291D54940057868B /* ComputerGuessingViewOutput.swift in Sources */,
+				1D974572291E3EE900B1CA55 /* GameResultViewInput.swift in Sources */,
 				1DC7B6DC291D547E0057868B /* ComputerGuessingViewController.swift in Sources */,
+				1D97456E291E3ECD00B1CA55 /* GameResultPresenter.swift in Sources */,
 				1DC7B6EB291D83270057868B /* PlayerNumberGuessingAssembly.swift in Sources */,
 				1DC7B6CB291D389D0057868B /* GuessNumberViewController.swift in Sources */,
 				1DC7B6CD291D38A90057868B /* GuessNumberViewInput.swift in Sources */,
@@ -388,6 +433,7 @@
 				1DC7B6B7291D33060057868B /* StartPresenter.swift in Sources */,
 				1DC7B6DA291D54740057868B /* ComputerGuessingPresenter.swift in Sources */,
 				1DC7B6BD291D33400057868B /* StartViewOutput.swift in Sources */,
+				1D97456C291E3EC300B1CA55 /* GameResultAssembly.swift in Sources */,
 				1DC7B6DE291D54880057868B /* ComputerGuessingViewInput.swift in Sources */,
 				1DC7B6C9291D388C0057868B /* GuessNumberPresenter.swift in Sources */,
 				1DC7B6ED291D83320057868B /* PlayerNumberGuessingPresenter.swift in Sources */,
@@ -399,6 +445,8 @@
 				1DC7B6CF291D38B70057868B /* GuessNumberViewOutput.swift in Sources */,
 				1DC7B6B5291D32DA0057868B /* StartAssembly.swift in Sources */,
 				1DC7B6D8291D546B0057868B /* ComputerGuessingAssembly.swift in Sources */,
+				1D974574291E3EF400B1CA55 /* GameResultViewOutput.swift in Sources */,
+				1D974570291E3ED600B1CA55 /* GameResultViewController.swift in Sources */,
 				1DADC8DB291DF74400FE8649 /* Resources.swift in Sources */,
 				1DC7B6EF291D833B0057868B /* PlayerNumberGuessingViewController.swift in Sources */,
 			);

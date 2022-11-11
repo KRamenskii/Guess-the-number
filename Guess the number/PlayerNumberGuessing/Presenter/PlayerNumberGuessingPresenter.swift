@@ -85,7 +85,7 @@ extension PlayerNumberGuessingPresenter: PlayerNumberGuessingViewOutput {
     func checkEnteredNumber(enteredNumber: Int) {
         numberOfUserGuesses += 1
         if enteredNumber == hiddenNumber {
-            view?.openGameResultModule()
+            view?.openGameResultModule(numberOfComputerGuessing: numberOfComputerGuessing, numberOfUserGuesses: numberOfUserGuesses)
         } else if enteredNumber > hiddenNumber {
             view?.updateResultGuessingNumber(condition: .less)
         } else if enteredNumber < hiddenNumber {

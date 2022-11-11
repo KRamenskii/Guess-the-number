@@ -92,9 +92,8 @@ extension PlayerNumberGuessingViewController: PlayerNumberGuessingViewInput {
         self.rightBorder = rightBorder
     }
     
-    func openGameResultModule() {
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = .red
+    func openGameResultModule(numberOfComputerGuessing: Int, numberOfUserGuesses: Int) {
+        let viewController = GameResultAssembly.assemblyModule(numberOfComputerGuessing: numberOfComputerGuessing, numberOfUserGuesses: numberOfUserGuesses)
         present(viewController, animated: true)
     }
     

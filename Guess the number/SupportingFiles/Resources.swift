@@ -14,4 +14,9 @@ enum Resources {
         case more
         case less
     }
+    
+    enum Winners {
+        case user
+        case computer
+    }
 }
