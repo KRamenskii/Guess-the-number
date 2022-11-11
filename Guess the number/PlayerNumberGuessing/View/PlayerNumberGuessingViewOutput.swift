@@ -8,5 +8,7 @@
 import Foundation
 
 protocol PlayerNumberGuessingViewOutput {
-    func viewWasAppear()
+    func checkEnteredText(text: String)
+    func guessButtonPressed(enteredNumber: Int)
+    func checkEnteredNumber(enteredNumber: Int)
 }

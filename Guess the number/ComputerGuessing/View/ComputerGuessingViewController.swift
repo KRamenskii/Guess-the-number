@@ -49,6 +49,7 @@ final class ComputerGuessingViewController: UIViewController {
         presenter?.checkSelectedCondition(generatedNumber: generatedNumber, condition: .equals)
         
         if isChosenCorrectly {
+            presenter?.guessTheNumberByComputer()
             if let hiddenNumber {
                 let viewController = PlayerNumberGuessingAssembly.assemblyModule(numberOfComputerGuessing: numberOfComputerGuessing, hiddenNumber: hiddenNumber)
                 present(viewController, animated: true)

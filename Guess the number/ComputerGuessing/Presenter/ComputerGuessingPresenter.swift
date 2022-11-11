@@ -70,7 +70,7 @@ extension ComputerGuessingPresenter: ComputerGuessingViewOutput {
     }
     
     func guessTheNumberByComputer() {
-        let hiddenNumber = generatedNumber(leftBorder, rightBorder)
+        let hiddenNumber = generatedNumber(1, 100)
         view?.update(generatedNumber: nil, numberOfComputerGuessing: nil, isChosenCorrectly: nil, hiddenNumber: hiddenNumber)
     }
 }

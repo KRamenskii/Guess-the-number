@@ -54,7 +54,7 @@ final class GuessNumberViewController: UIViewController {
     }
     
     @IBAction func checkEnteredText(_ sender: UITextField) {
-        let text = sender.text ?? ""
+        let text = sender.text ?? String()
         presenter?.checkEnteredText(text: text)
     }
 }
