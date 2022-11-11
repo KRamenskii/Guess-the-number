@@ -16,13 +16,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Kirill Ramenskii" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15B-ya-SEn">
-                                <rect key="frame" x="16" y="388" width="361" height="76"/>
+                                <rect key="frame" x="56.333333333333343" y="388" width="280.33333333333326" height="76"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startImage" translatesAutoresizingMaskIntoConstraints="NO" id="dUv-Fk-vxf">
-                                <rect key="frame" x="76.666666666666686" y="260" width="240" height="128"/>
+                                <rect key="frame" x="78.666666666666671" y="262.33333333333331" width="235.66666666666663" height="125.66666666666669"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="dUv-Fk-vxf" secondAttribute="height" multiplier="15:8" id="8tE-gk-Emw"/>
                                 </constraints>
@@ -31,19 +31,45 @@
                         <viewLayoutGuide key="safeArea" id="iuL-DY-gqD"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="15B-ya-SEn" secondAttribute="trailing" constant="16" id="291-Cs-zH1"/>
-                            <constraint firstItem="15B-ya-SEn" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="16" id="2uH-HG-D1J"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="15B-ya-SEn" secondAttribute="trailing" id="291-Cs-zH1"/>
+                            <constraint firstItem="15B-ya-SEn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="2uH-HG-D1J"/>
                             <constraint firstItem="15B-ya-SEn" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4fe-Uh-R9n"/>
                             <constraint firstItem="dUv-Fk-vxf" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6aA-w9-Q6T"/>
+                            <constraint firstItem="dUv-Fk-vxf" firstAttribute="top" secondItem="iuL-DY-gqD" secondAttribute="top" constant="50" id="8dw-n6-mCX"/>
                             <constraint firstItem="15B-ya-SEn" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="GNb-gH-7c6"/>
-                            <constraint firstItem="dUv-Fk-vxf" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.610687" id="QlE-CR-7RQ"/>
+                            <constraint firstItem="dUv-Fk-vxf" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.6" id="Lod-hc-S0q"/>
+                            <constraint firstItem="dUv-Fk-vxf" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.6" id="QlE-CR-7RQ"/>
                             <constraint firstItem="15B-ya-SEn" firstAttribute="top" secondItem="dUv-Fk-vxf" secondAttribute="bottom" id="Z3C-HQ-tf1"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8dw-n6-mCX"/>
+                                <exclude reference="Lod-hc-S0q"/>
+                                <exclude reference="QlE-CR-7RQ"/>
+                                <exclude reference="291-Cs-zH1"/>
+                                <exclude reference="2uH-HG-D1J"/>
+                                <exclude reference="GNb-gH-7c6"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="8dw-n6-mCX"/>
+                                <include reference="Lod-hc-S0q"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="QlE-CR-7RQ"/>
+                                <include reference="291-Cs-zH1"/>
+                                <include reference="2uH-HG-D1J"/>
+                                <include reference="GNb-gH-7c6"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.816901408450704" y="374.80916030534348"/>
         </scene>
     </scenes>
     <resources>

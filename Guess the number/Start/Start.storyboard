@@ -42,10 +42,32 @@
                         <constraints>
                             <constraint firstItem="AYT-dB-Pi2" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.85" id="Coo-gn-x0v"/>
                             <constraint firstAttribute="bottomMargin" secondItem="AYT-dB-Pi2" secondAttribute="bottom" constant="70" id="MBf-cD-yAJ"/>
+                            <constraint firstItem="AYT-dB-Pi2" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.85" id="kyl-r7-FkH"/>
                             <constraint firstItem="iHT-mK-DOU" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="topMargin" constant="100" id="lRC-uW-MWf"/>
                             <constraint firstItem="AYT-dB-Pi2" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="mhh-Ce-3hn"/>
+                            <constraint firstItem="iHT-mK-DOU" firstAttribute="top" secondItem="hi4-Be-dVm" secondAttribute="top" constant="70" id="sBO-Zw-Hyt"/>
                             <constraint firstItem="iHT-mK-DOU" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="wPu-oR-jSb"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="lRC-uW-MWf"/>
+                                <exclude reference="sBO-Zw-Hyt"/>
+                                <exclude reference="Coo-gn-x0v"/>
+                                <exclude reference="kyl-r7-FkH"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="sBO-Zw-Hyt"/>
+                                <include reference="kyl-r7-FkH"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="lRC-uW-MWf"/>
+                                <include reference="Coo-gn-x0v"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="startButton" destination="AYT-dB-Pi2" id="ep9-8N-gfC"/>
