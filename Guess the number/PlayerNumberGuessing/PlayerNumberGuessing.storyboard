@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Player Number Guessing View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PlayerNumberGuessingViewController" modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="PlayerNumberGuessingViewController" customModule="Guess_the_number" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try № 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jt-jq-rSd">
+                                <rect key="frame" x="390.66666666666669" y="109" width="71" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are guessing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y40-T7-Ram">
+                                <rect key="frame" x="357.66666666666669" y="153" width="137" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Guess the number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RdJ-0f-QVl">
+                                <rect key="frame" x="259" y="205" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="checkEnteredText:" destination="Y6W-OH-hqX" eventType="editingChanged" id="d1h-2E-BNg"/>
+                                    <action selector="checkEnteredText:" destination="Y6W-OH-hqX" eventType="editingDidEnd" id="sQs-ds-utJ"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9J-5G-k8Z">
+                                <rect key="frame" x="259" y="269" width="334" height="41.666666666666686"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Q9J-5G-k8Z" secondAttribute="height" multiplier="8" id="7Ak-GK-yXb"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Guess">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterNumber:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xlj-3g-pFv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qT-Jb-GNs">
+                                <rect key="frame" x="426" y="350.66666666666669" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G45-EC-WLz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Y40-T7-Ram" firstAttribute="top" secondItem="6Jt-jq-rSd" secondAttribute="bottom" constant="20" id="9RE-c8-Dyd"/>
+                            <constraint firstItem="6Jt-jq-rSd" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="9Yc-nY-lga"/>
+                            <constraint firstItem="4qT-Jb-GNs" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="JQn-AD-xZT"/>
+                            <constraint firstItem="RdJ-0f-QVl" firstAttribute="top" secondItem="Y40-T7-Ram" secondAttribute="bottom" constant="30" id="Mlw-Qc-BYg"/>
+                            <constraint firstItem="Q9J-5G-k8Z" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.85" id="Pwe-Dv-1fK"/>
+                            <constraint firstItem="Y40-T7-Ram" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="RUE-Z7-rod"/>
+                            <constraint firstItem="4qT-Jb-GNs" firstAttribute="top" secondItem="Q9J-5G-k8Z" secondAttribute="bottom" constant="60" id="T58-Gy-MKf"/>
+                            <constraint firstItem="6Jt-jq-rSd" firstAttribute="top" secondItem="G45-EC-WLz" secondAttribute="top" constant="50" id="UkS-W4-Km6"/>
+                            <constraint firstItem="RdJ-0f-QVl" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="W3X-Rp-bNr"/>
+                            <constraint firstItem="Q9J-5G-k8Z" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Xez-qP-siY"/>
+                            <constraint firstItem="RdJ-0f-QVl" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.85" id="an5-Y6-dlq"/>
+                            <constraint firstItem="Q9J-5G-k8Z" firstAttribute="top" secondItem="RdJ-0f-QVl" secondAttribute="bottom" constant="30" id="cmj-KF-DcE"/>
+                            <constraint firstItem="RdJ-0f-QVl" firstAttribute="top" secondItem="Y40-T7-Ram" secondAttribute="bottom" constant="60" id="gA3-MB-r6a"/>
+                            <constraint firstItem="Q9J-5G-k8Z" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.85" id="hYw-0G-lqJ"/>
+                            <constraint firstItem="4qT-Jb-GNs" firstAttribute="top" secondItem="Q9J-5G-k8Z" secondAttribute="bottom" constant="40" id="ogI-98-T0Q"/>
+                            <constraint firstItem="Y40-T7-Ram" firstAttribute="top" secondItem="6Jt-jq-rSd" secondAttribute="bottom" constant="20" id="qp6-aE-UuW"/>
+                            <constraint firstItem="Q9J-5G-k8Z" firstAttribute="top" secondItem="RdJ-0f-QVl" secondAttribute="bottom" constant="60" id="uwk-HY-0h0"/>
+                            <constraint firstItem="6Jt-jq-rSd" firstAttribute="top" secondItem="G45-EC-WLz" secondAttribute="top" constant="50" id="zoZ-cm-vLv"/>
+                            <constraint firstItem="RdJ-0f-QVl" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.85" id="zvw-hU-yO4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Mlw-Qc-BYg"/>
+                                <exclude reference="an5-Y6-dlq"/>
+                                <exclude reference="gA3-MB-r6a"/>
+                                <exclude reference="zvw-hU-yO4"/>
+                                <exclude reference="Pwe-Dv-1fK"/>
+                                <exclude reference="cmj-KF-DcE"/>
+                                <exclude reference="hYw-0G-lqJ"/>
+                                <exclude reference="uwk-HY-0h0"/>
+                                <exclude reference="UkS-W4-Km6"/>
+                                <exclude reference="zoZ-cm-vLv"/>
+                                <exclude reference="T58-Gy-MKf"/>
+                                <exclude reference="ogI-98-T0Q"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="Mlw-Qc-BYg"/>
+                                <include reference="zvw-hU-yO4"/>
+                                <include reference="Pwe-Dv-1fK"/>
+                                <include reference="cmj-KF-DcE"/>
+                                <include reference="zoZ-cm-vLv"/>
+                                <include reference="ogI-98-T0Q"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="an5-Y6-dlq"/>
+                                <include reference="gA3-MB-r6a"/>
+                                <include reference="hYw-0G-lqJ"/>
+                                <include reference="uwk-HY-0h0"/>
+                                <include reference="UkS-W4-Km6"/>
+                                <include reference="T58-Gy-MKf"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="guessButton" destination="Q9J-5G-k8Z" id="1c7-uX-nfR"/>
+                        <outlet property="titleLabel" destination="4qT-Jb-GNs" id="6DK-O1-tWd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

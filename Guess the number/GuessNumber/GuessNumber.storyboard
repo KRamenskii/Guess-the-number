@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Guess Number View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="GuessNumberViewController" modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="GuessNumberViewController" customModule="Guess_the_number" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdY-TX-6UM">
+                                <rect key="frame" x="29.333333333333343" y="706.33333333333337" width="334.33333333333326" height="41.666666666666629"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kdY-TX-6UM" secondAttribute="height" multiplier="8" id="JJt-ek-Feg"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Enter the Number">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterNumber:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9LX-WN-fQa"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Guess the number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SvA-Hk-ssJ">
+                                <rect key="frame" x="29.333333333333343" y="159" width="334.33333333333326" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="checkEnteredText:" destination="Y6W-OH-hqX" eventType="editingChanged" id="9MI-n3-9dP"/>
+                                    <action selector="checkEnteredText:" destination="Y6W-OH-hqX" eventType="editingDidEnd" id="SCx-RL-GDY"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G5O-Fu-0k4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="kdY-TX-6UM" secondAttribute="bottom" constant="70" id="8gN-P2-k7C"/>
+                            <constraint firstItem="SvA-Hk-ssJ" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.85" id="Aww-Xk-CNZ"/>
+                            <constraint firstItem="SvA-Hk-ssJ" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.85" id="RFu-5M-inz"/>
+                            <constraint firstItem="SvA-Hk-ssJ" firstAttribute="top" secondItem="G5O-Fu-0k4" secondAttribute="top" constant="70" id="W84-yf-Xl7"/>
+                            <constraint firstItem="SvA-Hk-ssJ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="iEf-oC-DeW"/>
+                            <constraint firstItem="SvA-Hk-ssJ" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="topMargin" constant="100" id="jpG-uf-0xd"/>
+                            <constraint firstItem="kdY-TX-6UM" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.85" id="oFd-lZ-kNx"/>
+                            <constraint firstItem="kdY-TX-6UM" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="s5J-Xc-L2F"/>
+                            <constraint firstItem="kdY-TX-6UM" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.85" id="vRu-8W-nnD"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Aww-Xk-CNZ"/>
+                                <exclude reference="RFu-5M-inz"/>
+                                <exclude reference="W84-yf-Xl7"/>
+                                <exclude reference="jpG-uf-0xd"/>
+                                <exclude reference="oFd-lZ-kNx"/>
+                                <exclude reference="vRu-8W-nnD"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="RFu-5M-inz"/>
+                                <include reference="W84-yf-Xl7"/>
+                                <include reference="oFd-lZ-kNx"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Aww-Xk-CNZ"/>
+                                <include reference="jpG-uf-0xd"/>
+                                <include reference="vRu-8W-nnD"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="enterNumberButton" destination="kdY-TX-6UM" id="GDX-3q-6Bz"/>
+                        <outlet property="textField" destination="SvA-Hk-ssJ" id="GbM-cl-uOU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
