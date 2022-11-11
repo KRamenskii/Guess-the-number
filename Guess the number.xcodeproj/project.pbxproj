@@ -10,6 +10,8 @@
 		1D27512929125FE400DBDA6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D27512829125FE400DBDA6D /* AppDelegate.swift */; };
 		1D27513229125FE500DBDA6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D27513129125FE500DBDA6D /* Assets.xcassets */; };
 		1D27513529125FE500DBDA6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D27513329125FE500DBDA6D /* LaunchScreen.storyboard */; };
+		1DADC8D9291DEC4000FE8649 /* UIViewController + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DADC8D8291DEC4000FE8649 /* UIViewController + Ext.swift */; };
+		1DADC8DB291DF74400FE8649 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DADC8DA291DF74400FE8649 /* Resources.swift */; };
 		1DC7B6B5291D32DA0057868B /* StartAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7B6B4291D32DA0057868B /* StartAssembly.swift */; };
 		1DC7B6B7291D33060057868B /* StartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7B6B6291D33060057868B /* StartPresenter.swift */; };
 		1DC7B6B9291D33230057868B /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7B6B8291D33230057868B /* StartViewController.swift */; };
@@ -44,6 +46,8 @@
 		1D27513129125FE500DBDA6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D27513429125FE500DBDA6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D27513629125FE500DBDA6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DADC8D8291DEC4000FE8649 /* UIViewController + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Ext.swift"; sourceTree = "<group>"; };
+		1DADC8DA291DF74400FE8649 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		1DC7B6B4291D32DA0057868B /* StartAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartAssembly.swift; sourceTree = "<group>"; };
 		1DC7B6B6291D33060057868B /* StartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPresenter.swift; sourceTree = "<group>"; };
 		1DC7B6B8291D33230057868B /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 				1D27513129125FE500DBDA6D /* Assets.xcassets */,
 				1D27513329125FE500DBDA6D /* LaunchScreen.storyboard */,
 				1D27513629125FE500DBDA6D /* Info.plist */,
+				1DADC8DA291DF74400FE8649 /* Resources.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -214,6 +219,7 @@
 			children = (
 				1DC7B6C1291D36410057868B /* UIButton + Ext.swift */,
 				1DC7B6E3291D6BB70057868B /* String + Ext.swift */,
+				1DADC8D8291DEC4000FE8649 /* UIViewController + Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -386,12 +392,14 @@
 				1DC7B6C9291D388C0057868B /* GuessNumberPresenter.swift in Sources */,
 				1DC7B6ED291D83320057868B /* PlayerNumberGuessingPresenter.swift in Sources */,
 				1DC7B6F3291D83530057868B /* PlayerNumberGuessingViewOutput.swift in Sources */,
+				1DADC8D9291DEC4000FE8649 /* UIViewController + Ext.swift in Sources */,
 				1DC7B6C7291D38810057868B /* GuessNumberAssembly.swift in Sources */,
 				1DC7B6C2291D36410057868B /* UIButton + Ext.swift in Sources */,
 				1D27512929125FE400DBDA6D /* AppDelegate.swift in Sources */,
 				1DC7B6CF291D38B70057868B /* GuessNumberViewOutput.swift in Sources */,
 				1DC7B6B5291D32DA0057868B /* StartAssembly.swift in Sources */,
 				1DC7B6D8291D546B0057868B /* ComputerGuessingAssembly.swift in Sources */,
+				1DADC8DB291DF74400FE8649 /* Resources.swift in Sources */,
 				1DC7B6EF291D833B0057868B /* PlayerNumberGuessingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

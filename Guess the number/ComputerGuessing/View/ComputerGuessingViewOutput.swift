@@ -10,4 +10,5 @@ import Foundation
 protocol ComputerGuessingViewOutput {
     func viewWasAppear()
     func changeRange(_ leftBorder: Int?, _ rightBorder: Int?)
+    func checkSelectedCondition(generatedNumber: Int, condition: Resources.Conditions)
 }

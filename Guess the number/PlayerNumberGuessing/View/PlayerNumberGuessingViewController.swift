@@ -13,6 +13,9 @@ final class PlayerNumberGuessingViewController: UIViewController {
     
     var presenter: PlayerNumberGuessingPresenter?
     
+    @IBOutlet private weak var guessButton: UIButton!
+    @IBOutlet private weak var titleLabel: UILabel!
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {

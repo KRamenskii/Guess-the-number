@@ -20,6 +20,7 @@ final class ComputerGuessingViewController: UIViewController {
     
     private var generatedNumber = Int() { didSet { setTitle() }}
     private var numberOfComputerGuessing = Int()
+    private var isChosenCorrectly = true
     
     // MARK: - Lifecycle
     
@@ -44,16 +45,34 @@ final class ComputerGuessingViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func tappedEqualsButton(_ sender: UIButton) {
-        let viewController = PlayerNumberGuessingAssembly.assemblyModule(numberOfComputerGuessing: numberOfComputerGuessing)
-        present(viewController, animated: true)
+        presenter?.checkSelectedCondition(generatedNumber: generatedNumber, condition: .equals)
+        
+        if isChosenCorrectly {
+            let viewController = PlayerNumberGuessingAssembly.assemblyModule(numberOfComputerGuessing: numberOfComputerGuessing, hiddenNumber: 1) // TODO: - сделать загаданное число
+            present(viewController, animated: true)
+        } else {
+            showAlert(message: "Choose a condition that satisfies the given number.")
+        }
     }
     
     @IBAction func tappedMoreButton(_ sender: UIButton) {
-        presenter?.changeRange(generatedNumber, nil)
+        presenter?.checkSelectedCondition(generatedNumber: generatedNumber, condition: .more)
+        
+        if isChosenCorrectly {
+            presenter?.changeRange(generatedNumber, nil)
+        } else {
+            showAlert(message: "Choose a condition that satisfies the given number.")
+        }
     }
     
     @IBAction func tappedLessButton(_ sender: UIButton) {
-        presenter?.changeRange(nil, generatedNumber)
+        presenter?.checkSelectedCondition(generatedNumber: generatedNumber, condition: .less)
+        
+        if isChosenCorrectly {
+            presenter?.changeRange(nil, generatedNumber)
+        } else {
+            showAlert(message: "Choose a condition that satisfies the given number.")
+        }
     }
 }
 
@@ -61,8 +80,17 @@ final class ComputerGuessingViewController: UIViewController {
 
 extension ComputerGuessingViewController: ComputerGuessingViewInput {
     
-    func update(generatedNumber: Int, numberOfComputerGuessing: Int) {
-        self.generatedNumber = generatedNumber
-        self.numberOfComputerGuessing = numberOfComputerGuessing
+    func update(generatedNumber: Int?, numberOfComputerGuessing: Int?, isChosenCorrectly: Bool?) {
+        if let generatedNumber {
+            self.generatedNumber = generatedNumber
+        }
+        
+        if let numberOfComputerGuessing {
+            self.numberOfComputerGuessing = numberOfComputerGuessing
+        }
+        
+        if let isChosenCorrectly {
+            self.isChosenCorrectly = isChosenCorrectly
+        }
     }
 }
