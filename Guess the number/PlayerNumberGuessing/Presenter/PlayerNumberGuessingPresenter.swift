@@ -12,6 +12,14 @@ final class PlayerNumberGuessingPresenter {
     // MARK: - Properties
     
     weak var view: PlayerNumberGuessingViewInput?
+    
+    private let numberOfComputerGuessing: Int
+    
+    // MARK: - Init
+    
+    init(numberOfComputerGuessing: Int) {
+        self.numberOfComputerGuessing = numberOfComputerGuessing
+    }
 }
 
 // MARK: - PlayerNumberGuessingViewOutput

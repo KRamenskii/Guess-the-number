@@ -19,6 +19,7 @@ final class ComputerGuessingViewController: UIViewController {
     @IBOutlet private weak var titleLabel: UILabel!
     
     private var generatedNumber = Int() { didSet { setTitle() }}
+    private var numberOfComputerGuessing = Int()
     
     // MARK: - Lifecycle
     
@@ -43,7 +44,7 @@ final class ComputerGuessingViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func tappedEqualsButton(_ sender: UIButton) {
-        let viewController = PlayerNumberGuessingAssembly.assemblyModule()
+        let viewController = PlayerNumberGuessingAssembly.assemblyModule(numberOfComputerGuessing: numberOfComputerGuessing)
         present(viewController, animated: true)
     }
     
@@ -60,7 +61,8 @@ final class ComputerGuessingViewController: UIViewController {
 
 extension ComputerGuessingViewController: ComputerGuessingViewInput {
     
-    func update(generatedNumber: Int) {
+    func update(generatedNumber: Int, numberOfComputerGuessing: Int) {
         self.generatedNumber = generatedNumber
+        self.numberOfComputerGuessing = numberOfComputerGuessing
     }
 }

@@ -17,6 +17,7 @@ final class ComputerGuessingPresenter {
     
     private var leftBorder = 1
     private var rightBorder = 100
+    private var numberOfComputerGuessing = Int()
     
     // MARK: - Init
     
@@ -36,7 +37,8 @@ final class ComputerGuessingPresenter {
 extension ComputerGuessingPresenter: ComputerGuessingViewOutput {
     
     func viewWasAppear() {
-        view?.update(generatedNumber: generatedNumber(leftBorder, rightBorder))
+        numberOfComputerGuessing += 1
+        view?.update(generatedNumber: generatedNumber(leftBorder, rightBorder), numberOfComputerGuessing: numberOfComputerGuessing)
     }
     
     func changeRange(_ leftBorder: Int?, _ rightBorder: Int?) {
@@ -48,6 +50,7 @@ extension ComputerGuessingPresenter: ComputerGuessingViewOutput {
             self.rightBorder = rightBorder
         }
         
-        view?.update(generatedNumber: generatedNumber(self.leftBorder, self.rightBorder))
+        numberOfComputerGuessing += 1
+        view?.update(generatedNumber: generatedNumber(self.leftBorder, self.rightBorder), numberOfComputerGuessing: numberOfComputerGuessing)
     }
 }

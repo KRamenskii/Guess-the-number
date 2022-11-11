@@ -43,12 +43,12 @@ final class GuessNumberViewController: UIViewController {
                     present(viewController, animated: true)
                 }
             } else {
-                let message = "Введённое число должно находиться в диапазоне от 1 до 100 включительно."
+                let message = "The number entered must be between 1 and 100 inclusive."
                 showAlert(message: message)
             }
             
         } else {
-            let message = "Введите числовое значение."
+            let message = "Enter a numeric value."
             showAlert(message: message)
         }
     }
@@ -81,11 +81,11 @@ extension GuessNumberViewController {
     
     private func showAlert(message: String) {
         let alert = UIAlertController(
-            title: "Ошибка ввода данных!",
+            title: "Error!",
             message: message,
             preferredStyle: .alert
         )
-        alert.addAction(UIAlertAction(title: "Закрыть", style: .cancel))
+        alert.addAction(UIAlertAction(title: "Close", style: .cancel))
         present(alert, animated: true)
     }
 }
