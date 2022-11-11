@@ -21,6 +21,7 @@ final class ComputerGuessingViewController: UIViewController {
     private var generatedNumber = Int() { didSet { setTitle() }}
     private var numberOfComputerGuessing = Int()
     private var isChosenCorrectly = true
+    private var hiddenNumber: Int?
     
     // MARK: - Lifecycle
     
@@ -48,8 +49,10 @@ final class ComputerGuessingViewController: UIViewController {
         presenter?.checkSelectedCondition(generatedNumber: generatedNumber, condition: .equals)
         
         if isChosenCorrectly {
-            let viewController = PlayerNumberGuessingAssembly.assemblyModule(numberOfComputerGuessing: numberOfComputerGuessing, hiddenNumber: 1) // TODO: - сделать загаданное число
-            present(viewController, animated: true)
+            if let hiddenNumber {
+                let viewController = PlayerNumberGuessingAssembly.assemblyModule(numberOfComputerGuessing: numberOfComputerGuessing, hiddenNumber: hiddenNumber)
+                present(viewController, animated: true)
+            }
         } else {
             showAlert(message: "Choose a condition that satisfies the given number.")
         }
@@ -80,7 +83,7 @@ final class ComputerGuessingViewController: UIViewController {
 
 extension ComputerGuessingViewController: ComputerGuessingViewInput {
     
-    func update(generatedNumber: Int?, numberOfComputerGuessing: Int?, isChosenCorrectly: Bool?) {
+    func update(generatedNumber: Int?, numberOfComputerGuessing: Int?, isChosenCorrectly: Bool?, hiddenNumber: Int?) {
         if let generatedNumber {
             self.generatedNumber = generatedNumber
         }
@@ -91,6 +94,10 @@ extension ComputerGuessingViewController: ComputerGuessingViewInput {
         
         if let isChosenCorrectly {
             self.isChosenCorrectly = isChosenCorrectly
+        }
+        
+        if let hiddenNumber {
+            self.hiddenNumber = hiddenNumber
         }
     }
 }

@@ -8,5 +8,5 @@
 import Foundation
 
 protocol ComputerGuessingViewInput: AnyObject {
-    func update(generatedNumber: Int?, numberOfComputerGuessing: Int?, isChosenCorrectly: Bool?)
+    func update(generatedNumber: Int?, numberOfComputerGuessing: Int?, isChosenCorrectly: Bool?, hiddenNumber: Int?)
 }

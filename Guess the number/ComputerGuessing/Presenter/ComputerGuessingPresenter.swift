@@ -38,7 +38,7 @@ extension ComputerGuessingPresenter: ComputerGuessingViewOutput {
     
     func viewWasAppear() {
         numberOfComputerGuessing += 1
-        view?.update(generatedNumber: generatedNumber(leftBorder, rightBorder), numberOfComputerGuessing: numberOfComputerGuessing, isChosenCorrectly: nil)
+        view?.update(generatedNumber: generatedNumber(leftBorder, rightBorder), numberOfComputerGuessing: numberOfComputerGuessing, isChosenCorrectly: nil, hiddenNumber: nil)
     }
     
     func changeRange(_ leftBorder: Int?, _ rightBorder: Int?) {
@@ -51,7 +51,7 @@ extension ComputerGuessingPresenter: ComputerGuessingViewOutput {
         }
         
         numberOfComputerGuessing += 1
-        view?.update(generatedNumber: generatedNumber(self.leftBorder, self.rightBorder), numberOfComputerGuessing: numberOfComputerGuessing, isChosenCorrectly: nil)
+        view?.update(generatedNumber: generatedNumber(self.leftBorder, self.rightBorder), numberOfComputerGuessing: numberOfComputerGuessing, isChosenCorrectly: nil, hiddenNumber: nil)
     }
     
     func checkSelectedCondition(generatedNumber: Int, condition: Resources.Conditions) {
@@ -66,6 +66,11 @@ extension ComputerGuessingPresenter: ComputerGuessingViewOutput {
             isChosenCorrectly = hiddenNumber < generatedNumber ? true : false
         }
         
-        view?.update(generatedNumber: nil, numberOfComputerGuessing: nil, isChosenCorrectly: isChosenCorrectly)
+        view?.update(generatedNumber: nil, numberOfComputerGuessing: nil, isChosenCorrectly: isChosenCorrectly, hiddenNumber: nil)
+    }
+    
+    func guessTheNumberByComputer() {
+        let hiddenNumber = generatedNumber(leftBorder, rightBorder)
+        view?.update(generatedNumber: nil, numberOfComputerGuessing: nil, isChosenCorrectly: nil, hiddenNumber: hiddenNumber)
     }
 }
