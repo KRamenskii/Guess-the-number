@@ -53,6 +53,8 @@ extension GameResultViewController: GameResultViewInput {
             resultGameLabel.text = "You Lost"
         case .user:
             resultGameLabel.text = "You Win"
+        case .draw:
+            resultGameLabel.text = "Equal score, draw!"
         }
     }
 }

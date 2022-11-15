@@ -31,6 +31,8 @@ final class GameResultPresenter {
     private func winner() -> Resources.Winners {
         if numberOfComputerGuessing > numberOfUserGuesses {
             return .user
+        } else if numberOfComputerGuessing == numberOfUserGuesses {
+            return .draw
         } else {
             return .computer
         }

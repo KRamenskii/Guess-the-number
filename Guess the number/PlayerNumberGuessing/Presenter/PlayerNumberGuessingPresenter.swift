@@ -38,20 +38,6 @@ final class PlayerNumberGuessingPresenter {
         return text.isNumber()
     }
     
-    private func isInTheRange(_ text: String) -> Bool {
-        guard text.isNumber() else { return false }
-        var isInTheRange = Bool()
-        if let number = Int(text) {
-            switch number {
-            case 1...100:
-                isInTheRange = true
-            default:
-                isInTheRange = false
-            }
-        }
-        return isInTheRange
-    }
-    
     private func changeRange(enteredNumber: Int) {
         if enteredNumber > hiddenNumber {
             rightBorder = enteredNumber - 1

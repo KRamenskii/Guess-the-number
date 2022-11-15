@@ -18,5 +18,6 @@ enum Resources {
     enum Winners {
         case user
         case computer
+        case draw
     }
 }
