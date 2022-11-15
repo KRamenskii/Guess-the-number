@@ -33,10 +33,15 @@ final class PlayerNumberGuessingViewController: UIViewController {
     
     private func setupView() {
         guessButton.addCornerRadius()
+        
         let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(hideKeyboardOnSwipeDown))
         swipeDown.delegate = self
         swipeDown.direction =  UISwipeGestureRecognizer.Direction.down
-        self.view.addGestureRecognizer(swipeDown)
+        view.addGestureRecognizer(swipeDown)
+        
+        let tapScreen = UITapGestureRecognizer(target: self, action: #selector(hideKeyboardOnSwipeDown))
+        tapScreen.cancelsTouchesInView = false
+        view.addGestureRecognizer(tapScreen)
     }
     
     @objc func hideKeyboardOnSwipeDown() {
@@ -122,6 +127,16 @@ extension PlayerNumberGuessingViewController: PlayerNumberGuessingViewInput {
 extension PlayerNumberGuessingViewController: UIGestureRecognizerDelegate {
     
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
+    }
+}
+
+// MARK: - UITextFieldDelegate
+
+extension PlayerNumberGuessingViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
         return true
     }
 }

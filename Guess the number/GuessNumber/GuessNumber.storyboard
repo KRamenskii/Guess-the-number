@@ -37,6 +37,7 @@
                                 <connections>
                                     <action selector="checkEnteredText:" destination="Y6W-OH-hqX" eventType="editingChanged" id="9MI-n3-9dP"/>
                                     <action selector="checkEnteredText:" destination="Y6W-OH-hqX" eventType="editingDidEnd" id="SCx-RL-GDY"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="mbS-YV-c8o"/>
                                 </connections>
                             </textField>
                         </subviews>

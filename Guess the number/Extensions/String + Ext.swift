@@ -8,6 +8,7 @@
 import Foundation
 
 extension String {
+    
     func isNumber() -> Bool {
         let numberCharacters = NSCharacterSet.decimalDigits.inverted
         return !self.isEmpty && self.rangeOfCharacter(from: numberCharacters) == nil
