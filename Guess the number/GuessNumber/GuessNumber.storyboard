@@ -80,8 +80,10 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="bottomAnchorEnterNumberButton" destination="8gN-P2-k7C" id="I2C-Y6-Loj"/>
                         <outlet property="enterNumberButton" destination="kdY-TX-6UM" id="GDX-3q-6Bz"/>
                         <outlet property="textField" destination="SvA-Hk-ssJ" id="GbM-cl-uOU"/>
+                        <outlet property="topAnchorTextField" destination="W84-yf-Xl7" id="T5G-i5-6Xy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

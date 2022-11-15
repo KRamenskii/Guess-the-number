@@ -16,6 +16,12 @@ final class GuessNumberViewController: UIViewController {
     @IBOutlet private weak var enterNumberButton: UIButton!
     @IBOutlet private weak var textField: UITextField!
     
+    @IBOutlet weak var bottomAnchorEnterNumberButton: NSLayoutConstraint!
+    
+    
+    @IBOutlet weak var topAnchorTextField: NSLayoutConstraint!
+    
+    
     private var number: Int?
     private var isInTheRange = Bool()
     
@@ -24,6 +30,33 @@ final class GuessNumberViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        registerKeyboardNotifications()
+    }
+    
+    deinit {
+        removeKeyboardNotifications()
+    }
+    
+    func registerKeyboardNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    func removeKeyboardNotifications() {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc func keyboardWillShow(_ notification: Notification) {
+        let userInfo = notification.userInfo
+        let keyboardFrameSize = (userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        bottomAnchorEnterNumberButton.constant = 20 + keyboardFrameSize.height
+        topAnchorTextField.constant = 20
+    }
+    
+    @objc func keyboardWillHide() {
+        bottomAnchorEnterNumberButton.constant = 70
+        topAnchorTextField.constant = 70
     }
     
     // MARK: - Settings
