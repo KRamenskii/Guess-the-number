@@ -15,6 +15,10 @@ final class PlayerNumberGuessingViewController: UIViewController {
     
     @IBOutlet private weak var guessButton: UIButton!
     @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet weak var topAnchorTitle: NSLayoutConstraint!
+    @IBOutlet weak var topAnchorSubtitle: NSLayoutConstraint!
+    @IBOutlet weak var topAnchorTextField: NSLayoutConstraint!
+    @IBOutlet weak var topAnchorGuessButton: NSLayoutConstraint!
     
     private var enteredNumber: Int?
     
@@ -27,6 +31,35 @@ final class PlayerNumberGuessingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        registerKeyboardNotifications()
+    }
+    
+    deinit {
+        removeKeyboardNotifications()
+    }
+    
+    func registerKeyboardNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    func removeKeyboardNotifications() {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc func keyboardWillShow() {
+        topAnchorTitle.constant = 10
+        topAnchorSubtitle.constant = 10
+        topAnchorTextField.constant = 10
+        topAnchorGuessButton.constant = 10
+    }
+    
+    @objc func keyboardWillHide() {
+        topAnchorTitle.constant = 50
+        topAnchorSubtitle.constant = 20
+        topAnchorTextField.constant = 30
+        topAnchorGuessButton.constant = 30
     }
     
     // MARK: - Settings

@@ -15,12 +15,8 @@ final class GuessNumberViewController: UIViewController {
     
     @IBOutlet private weak var enterNumberButton: UIButton!
     @IBOutlet private weak var textField: UITextField!
-    
     @IBOutlet weak var bottomAnchorEnterNumberButton: NSLayoutConstraint!
-    
-    
     @IBOutlet weak var topAnchorTextField: NSLayoutConstraint!
-    
     
     private var number: Int?
     private var isInTheRange = Bool()
